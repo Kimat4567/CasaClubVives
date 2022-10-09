@@ -26,13 +26,14 @@ header{
     align-items: center;
     height: 100px;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 .contenido{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 0rem;
     margin-bottom: 3rem;
 }
 

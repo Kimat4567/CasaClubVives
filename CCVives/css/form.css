@@ -1,0 +1,158 @@
+form {
+    width: 25em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    margin: 1em;
+    box-shadow: .25em .25em 0 #ccc;
+    background-color: linen;
+    text-align: center;
+}
+
+.form-group {
+    padding: 1em;
+    margin: 0.3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group label{
+    font-size: 2rem;
+    margin: 0.45em 0px 0px 0px;
+}
+
+.form-buttons button {
+    margin: 0px 0.5em 0px 0.5em;
+    width: 13em;
+    font-size: 1em;
+}
+
+.form-message {
+    position: relative;
+    left: 2.3em;
+    font-size: 40px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Estilo del área del input[file] */
+.drag-drop {
+    height: 10em;
+    width: 10em;
+    background-color: #CD2020;
+    border-radius: 5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 0 auto 1em;
+}
+
+.drag-drop span.desc {
+    display: block;
+    font-size: 1.3em;
+    padding: 0 0.5em;
+    color: white;
+}
+
+input[type="file"] {
+    height: 12em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* Estilo del área del input[file] con :hover */
+
+.drag-drop:hover,
+input[type="file"]:hover {
+    background-color: #890012;
+    cursor: pointer;
+}
+
+.drag-drop:hover span.desc {
+    color: #fff;
+}
+
+.drag-drop:hover .pulsating {
+    animation: pulse1 1s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: pulse1 1s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+
+/* Composición del icono de Upload con FontAwesome */
+.fa-stack {
+    margin-top: .5em;
+}
+
+.fa-stack .top {
+    color: white;
+}
+
+.fa-stack .medium {
+    color: black;
+    text-shadow: 0 0 .25em #666;
+}
+
+.fa-stack .bottom {
+    color: rgba(225, 225, 225, .75);
+}
+
+/* Keyframing de la animación */
+
+@keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-moz-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-webkit-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+
+    50% {
+        color: rgba(225, 225, 225, 0.25);
+    }
+
+    100% {
+        color: rgba(225, 225, 225, .75);
+    }
+}
+
+@-ms-keyframes pulse1 {
+    0% {
+        color: rgba(225, 225, 225, .75);
+    }
+}

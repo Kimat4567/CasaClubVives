@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/download.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5d74737bdb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logoMenu" src="img/udem.png" alt="Logo Universidad">
+        <div class="cabezal">
+            <h1>Bienvenido, Julián.</h1>
+        </div>
+
+        <a href="index.html"><i class="fa-solid fa-bars barra"></i></a>
+    </header>
+
+    <h1 style="text-align: center">Descarga el formulario de inscripción:</h1>
+    <div class="vn-red" style="text-align: center;">
+        <a href="#">DESCARGAR</a>
+    </div>
+
+    <div class="contenido">
+        <form role="form">
+            <label style="font-size: 2rem;">Formulario de inscripción</label>
+            <div class="form-group">
+
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" />
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" />
+            </div>
+
+            <div class="drag-drop">
+                <input type="file" multiple="multiple" id="photo" />
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-cloud fa-stack-2x bottom pulsating"></i>
+                    <i class="fa fa-circle fa-stack-1x top medium"></i>
+                    <i class="fa fa-arrow-circle-up fa-stack-1x top"></i>
+                </span>
+                <span class="desc">Añadir Formulario diligenciado</span>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-default">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="cabezal">
+            <h1>Contáctanos: </h1>
+        </div>
+
+        <a href=""><i class="fa-brands fa-square-whatsapp barra"></i></a>
+    </footer>
+</body>
+
+</html>
