@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/download.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5d74737bdb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logoMenu" src="img/udem.png" alt="Logo Universidad">
+        <div class="cabezal">
+            <h1>Bienvenido, Julián.</h1>
+        </div>
+
+        <a href="index.html"><i class="fa-solid fa-bars barra"></i></a>
+    </header>
+
+    <div class="contenido">
+        <form role="form">
+            <label style="font-size: 2rem;">Realiza tu evento con nosotros</label>
+            <div class="form-group">
+
+                <label for="date">Fecha del evento</label>
+                <input type="date" class="form-control" id="date" />
+
+                <label for="assistants">Asistentes</label>
+                <input placeholder="Ingrese número de asistentes" type="text" class="form-control" id="assistants" />
+
+                <label for="eventType">Tipo de evento</label>
+                <select name="eventType" id="eventType">
+                    <option value="banquete">Banquete</option>
+                    <option value="fiesta">Fiesta</option>
+                    <option value="reunion">Reunión</option>
+                    <option value="conferencia">Conferencia</option>
+                </select>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-default">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="cabezal">
+            <h1>Contáctanos: </h1>
+        </div>
+
+        <a href=""><i class="fa-brands fa-square-whatsapp barra"></i></a>
+    </footer>
+</body>
+
+</html>

@@ -51,6 +51,12 @@ header{
     padding: 5px;
     margin-right: 2rem;
     margin-left: 2rem;
+    transition: 0.2s;
+}
+
+.imagen:hover{
+    width: 630px;
+    height: 600px;
 }
 
 .contenido a{
