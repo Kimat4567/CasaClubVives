@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <script src="js/vives.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5d74737bdb.js" crossorigin="anonymous"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -38,10 +40,16 @@
             <label style="font-size: 2rem;">Formulario de inscripción</label>
             <div class="form-group">
 
-                <label for="name">Nombre</label>
-                <input type="text" class="form-control" id="name" />
-                <label for="apellidos">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" />
+                <label for="semestre">Semestre para arrendamiento</label>
+                <input type="date" class="form-control" id="semestre" />
+                <label for="floorType">Tipo de habitación</label>
+                <select name="floorType" id="floorType">
+                    <option value="estandar">Habitación estándar.</option>
+                    <option value="balcon">Habitación con balcón.</option>
+                    <option value="terraza">Habitación con terraza.</option>
+                </select>
+                <label for="contact">Regálanos un número de contacto</label>
+                <input type="text" class="form-control" id="contact" />
             </div>
 
             <div class="drag-drop">
@@ -55,8 +63,8 @@
             </div>
 
             <div class="form-buttons">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-default">Cancelar</button>
+                <button class="btn btn-primary" id="botonEnviar">Enviar</button>
+                <button class="btn btn-default">Cancelar</button>
             </div>
         </form>
     </div>
