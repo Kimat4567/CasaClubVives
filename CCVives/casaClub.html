@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/form.css">
@@ -19,10 +19,17 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
     <script src="js/firebase.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/authentication.js"></script>
+    <script src="js/crud.js"></script>
+
+    <script src="js/eventos.js"></script>
+
 
     <title>Document</title>
 </head>
@@ -31,7 +38,7 @@
     <header>
         <img class="logoMenu" src="img/udem.png" alt="Logo Universidad">
         <div class="cabezal">
-            <h1>Bienvenido, Julián.</h1>
+            <h1>Bienvenido, Admin.</h1>
         </div>
 
         <a href="index.html"><i class="fa-solid fa-bars barra"></i></a>
@@ -58,11 +65,17 @@
             </div>
 
             <div class="form-buttons">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary" onclick="solicitarEvento()">Enviar</button>
                 <button type="reset" class="btn btn-default">Cancelar</button>
             </div>
         </form>
     </div>
+    
+    <center>
+        <div id="solicitudesEventos">
+            <h2>SOLICITUDES DE EVENTOS</h2>
+        </div>
+    </center>
 
     <footer>
         <div class="cabezal">
@@ -72,5 +85,6 @@
         <a href=""><i class="fa-brands fa-square-whatsapp barra"></i></a>
     </footer>
 </body>
+
 
 </html>

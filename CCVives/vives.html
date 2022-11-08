@@ -22,6 +22,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
     <script src="js/firebase.js"></script>
+    <script src="./js/vives.js"></script>
 
     <title>Document</title>
 </head>
@@ -35,11 +36,6 @@
 
         <a href="index.html"><i class="fa-solid fa-bars barra"></i></a>
     </header>
-
-    <h1 style="text-align: center">Descarga el formulario de inscripción:</h1>
-    <div class="vn-red" style="text-align: center;">
-        <a href="#">DESCARGAR</a>
-    </div>
 
     <div class="contenido">
         <form role="form">
@@ -69,11 +65,13 @@
             </div>
 
             <div class="form-buttons">
-                <button class="btn btn-primary" id="botonEnviar">Enviar</button>
+                <button class="btn btn-primary" id="botonEnviar" onclick="saveRentRequest()">Enviar</button>
                 <button class="btn btn-default">Cancelar</button>
             </div>
         </form>
     </div>
+
+    <div id="roomRequests"></div>
 
     <footer>
         <div class="cabezal">
@@ -83,5 +81,4 @@
         <a href=""><i class="fa-brands fa-square-whatsapp barra"></i></a>
     </footer>
 </body>
-
 </html>

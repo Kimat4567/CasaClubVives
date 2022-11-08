@@ -1,0 +1,2 @@
+const setSolicitudEvento = (asistentes, fecha, tipoDeEvento, usuario) => db.collection('solicitudesDeEventos').doc().set({ asistentes, fecha, tipoDeEvento, usuario })
+const getSolicitudesEventos = () => db.collection("solicitudesDeEventos").get();

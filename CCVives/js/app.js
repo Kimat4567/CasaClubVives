@@ -5,7 +5,7 @@ async function botonCrearUsuario() {
     const password = document.getElementById('password').value
 
     crearUsuario(correo, password)
-    
+
 }
 
 function registrarDatos(user) {
@@ -15,5 +15,7 @@ function registrarDatos(user) {
     const tipoUsuario = 'Ns9cL8H1w1ynDoccdur3'
     console.log(nombre, apellido, numeroContacto, tipoUsuario)
     console.log(user)
-    db.collection('usuarios').doc(user).set({ apellido, correo, nombre, numeroContacto, tipoUsuario })
+    
 }
+
+
